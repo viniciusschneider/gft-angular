@@ -1,0 +1,43 @@
+@import 'variables';
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.main {
+  background: $background;
+  flex-grow: 1;
+  overflow: auto;
+  width: 100%;
+}
+
+.float-container {
+  position: relative;
+
+  span {
+    align-items: center;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    font-size: 10px;
+    height: 15px;
+    justify-content: center;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    width: 15px;
+  }
+
+  & > mat-icon {
+    $size: 15px;
+    bottom: 5px;
+    font-size: $size;
+    height: $size;
+    position: absolute;
+    right: 5px;
+    width: $size;
+  }
+}

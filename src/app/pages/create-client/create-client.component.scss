@@ -1,0 +1,32 @@
+@import 'variables';
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .page-content {
+    flex-grow: 1;
+  }
+
+  .page-actions {
+    background: $white;
+
+    div {
+      width: fit-content;
+    }
+  }
+
+  .submit-container {
+    margin-bottom: 16px;
+  }
+}
+
+.input-container {
+  gap: 10px;
+
+  div {
+    max-width: 350px;
+    width: 100%;
+  }
+}

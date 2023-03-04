@@ -1,0 +1,15 @@
+<div class="input-container">
+  <label class="label" [for]="name">{{ label }}</label>
+  <input
+    class="label"
+    variant="text"
+    [id]="name"
+    [name]="name"
+    [formControl]="control"
+    [mask]="mask"
+    [type]="type"
+  />
+  <small [ngClass]="{ show: hasErrors || customError }">
+    {{ error || customError }}
+  </small>
+</div>

@@ -1,0 +1,16 @@
+<button
+  [type]="type"
+  [disabled]="disabled"
+  [ngClass]="{
+    small: size === 'small',
+    medium: size === 'medium',
+    rounded,
+    primary: variant === 'primary',
+    secondary: variant === 'secondary',
+    'default': text === 'small',
+    'title-section': text === 'large',
+    border: !withoutBorder
+  }"
+>
+  <ng-content></ng-content>
+</button>

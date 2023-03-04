@@ -1,0 +1,67 @@
+@import 'variables';
+
+.nav-container {
+  align-items: center;
+  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+  transition: ease-in-out .2s all;
+  width: 0px;
+
+  &.show {
+    width: 85px;
+  }
+
+  img {
+    height: 65px;
+    max-width: 65px;
+  }
+
+  nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  a, button {
+    align-items: center;
+    background: $primary;
+    border: none;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    min-height: 60px;
+    outline: none;
+    transition: ease-in-out .1s all;
+    width: 85px;
+
+    &:hover {
+      background: rgba(1, 63, 92, 1);
+      cursor: pointer;
+    }
+  }
+
+  button {
+    margin: 10px 0;
+  }
+}
+
+mat-icon {
+  $size: 25px;
+  color: $white;
+  font-size: $size;
+  height: $size;
+  width: $size;
+
+  &.burguer-icon {
+    $size: 20px;
+    color: rgba(115, 157, 177, 1);
+    font-size: $size;
+    height: $size;
+    width: $size;
+  }
+}

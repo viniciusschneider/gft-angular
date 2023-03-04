@@ -1,0 +1,24 @@
+<div class="stepper-container gap-2 gap-md-0 d-flex flex-column flex-md-row justify-content-md-center">
+  <ng-container
+    *ngFor="let item of items; let index = index"
+  >
+    <div class="stepper-item-vertical d-md-none">
+      <span
+        class="circle"
+        [ngClass]="{
+          current: item.current
+        }"
+      ></span>
+      <span class="label subtle">{{ item.label }}</span>
+    </div>
+    <div class="d-md-block stepper-item-horizontal">
+      <span
+        class="circle"
+        [ngClass]="{
+          current: item.current
+        }"
+      ></span>
+      <span class="label subtle">{{ item.label }}</span>
+    </div>
+  </ng-container>
+</div>

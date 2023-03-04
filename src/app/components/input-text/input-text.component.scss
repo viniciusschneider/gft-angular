@@ -1,0 +1,42 @@
+@import 'variables';
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  line-height: 14px;
+}
+
+input {
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid #C0C3C4;
+  display: flex;
+  height: 34px;
+  line-height: 16px;
+  margin-top: 8px;
+  outline: none;
+  padding: 0 8px;
+  transition: ease-in-out .1s all;
+
+  &:focus {
+    border-color: #E6ECEE;
+  }
+}
+
+small {
+  color: $red;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 4px;
+  min-height: 12px;
+  min-width: 12px;
+  opacity: 0;
+  transition: ease-in-out .1s all;
+
+  &.show {
+    opacity: 1;
+  }
+}

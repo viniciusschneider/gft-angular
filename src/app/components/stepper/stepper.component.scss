@@ -1,0 +1,59 @@
+@import 'variables';
+
+.stepper-container {
+  margin: 30px 20px 20px;
+}
+
+.circle {
+  background: #C6CED1;
+  border-radius: 50%;
+  border: 2px solid #C6CED1;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+
+  &.current {
+    background: $background;
+    border-color: $primary;
+  }
+}
+
+.label {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.stepper-item-horizontal {
+  border-top: 2px solid #C6CED1;
+  display: none;
+  height: 40px;
+  position: relative;
+  width: 150px;
+
+  .circle {
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .label {
+    left: 0;
+    position: absolute;
+    top: 30px;
+    transform: translate(-50%, -50%);
+  }
+
+  &:last-child {
+    border: none;
+    width: 0;
+  }
+}
+
+.stepper-item-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
